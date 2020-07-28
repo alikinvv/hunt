@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="btn header__buy"><span class="mobile">Купить</span> билет</a>
+        <div class="header__links">
+            <div class="social">
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-vk"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-inst"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-fb"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-youtube"></use></svg></a>
+            </div>
+            <div class="header__lang">
+                <a href="javascript:void(0)" class="active">RU</a>/<a href="javascript:void(0)">EN</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- START CONTENT  -->
+
+<section class="submenu">
+    <div class="container">
+        <div><strong>10-13 СЕНТЯБРЯ 2020</strong>  Москва, ВДНХ, павильон 75</div>
+        <a href="/">На главную</a>
+    </div>
+</section>
+
+<section class="menu">
+    <div class="container">
+        <a href="javascript:void(0)" class="mobile">Главная</a>
+        <a href="javascript:void(0)">О выставке</a>
+        <a href="javascript:void(0)">Посетить</a>
+        <a href="javascript:void(0)">Участники</a>
+        <a href="javascript:void(0)">Акции и новинки</a>
+        <a href="javascript:void(0)">Программа</a>
+        <a href="javascript:void(0)">Контакты</a>
+        <a href="javascript:void(0)" class="mobile red">Участнику</a>
+    </div>
+    <div class="close-menu">Свернуть</div>
+</section>
+
+<section class="content">
+    <div class="container">
+        <div class="content__body">
+            <div class="logo">
+                <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="dates tabs">
+                <a href="javascript:void(0)" data-tab="guest" class="active">посетителям</a>
+                <a href="javascript:void(0)" data-tab="profi">специалистам</a>
+            </div>
+
+            <div class="tab active" data-tab="guest">
+                <h3>Ждем Вас с 10 по 13 сентября на ВДНХ!</h3>
+
+                <div class="alert">
+                    <div class="alert__img"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-alert"></use></svg></div>
+                    <p>
+                        <span>Пожалуйста, ознакомьтесь</span> <br>
+                        с правилами безопасного посещения выставки
+                    </p>
+                </div>
+
+                <h4>Время работы выставки</h4>
+
+                <div class="columns">
+                    <div class="columns__col">
+                        10 сентября <strong>10:00 - 18:00</strong> <br>
+                        11 сентября <strong>10:00 - 18:00</strong> <br>
+                        12 сентября <strong>10:00 - 18:00</strong> <br>
+                        13 сентября <strong>10:00 - 16:00</strong>
+                    </div>
+                    <div class="columns__col"></div>
+                </div>
+
+                <div class="buy green">
+                    <h2>Купить билет</h2>
+                    <form action="">
+                        <p>Вход для посетителей  по билетам.  Стоимость билета в кассе в дни работы выставки - 300 рублей. <br>
+                            <span>Стоимость электронного билета  - 250 рублей</span></p>
+                        
+                        <div class="buy__row">
+                            <div class="buy__col">
+                                <div class="form-group">
+                                    <div class="buy__label">Имя</div>
+                                    <input type="text" value="Фамилия Имя">
+                                </div>
+                                <div class="form-group">
+                                    <div class="buy__label">Телефон</div>
+                                    <input type="text" name="phone" value="+7 (921) 123-45-67">
+                                </div>
+                                <div class="form-group">
+                                    <div class="buy__label">E-mail</div>
+                                    <input type="text" value="mymail@mydomain.ru">
+                                </div>
+                            </div>
+                            <div class="buy__col">
+                                <button class="btn">Купить билет онлайн <br> <span>за 250 рублей</span></button>
+                            </div>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="c1">
+                            <label for="c1">Я ознакомлен с политикой конфиденциальности данного сайта и согласен на обработку персональных данных</label>
+                        </div>
+                        <p>Дети до 12 лет и инвалиды (при наличии подтверждающих документов) - могут пройти бесплатно.</p>
+                    </form>
+                </div>
+
+                <div class="text">
+                    <p>48 выставка Охота и рыболовство пройдет на ВДНХ в павильоне № 57. 
+                        Павильон находится <strong>правее знаменитого павильона «Космос», <br>
+                        на площади Промышленности. </strong></p>
+
+                    <p>Чтобы пройти <strong>от главного входа ВДНХ</strong> до павильона 57, нужно идти всё время прямо 
+                        <strong>по любой из основных аллей Выставки</strong>, или по указателям «Политехнический музей».</p>
+
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.634321%2C55.829665&mode=routes&rtext=55.834031%2C37.626717~55.826398%2C37.637875&rtt=pd&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1327391626&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQl7Fd8SD" width="100%" height="730" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+                    <p>Вход на территорию ВДНХ бесплатный.  <br>
+                        Проезд автотранспорта на территорию ВДНХ платный. <br>
+                        Стоимость проезда и адреса парковок <a href="javascript:void(0)">на сайте ВДНХ</a></p>
+                </div>
+            </div>
+
+            <div class="tab" data-tab="profi">
+                <h4 class="bold">10, 11 сентября – Дни для профессиональных посетителей</h4>
+
+                <div class="text">Выставка «Охота и рыболовство на Руси» – главное событие для профессионалов отрасли охоты и рыбалки.
+                    Все ведущие компании соберутся на ВДНХ. Найдите новых партнеров!
+                </div>
+
+                <h4 class="bold">Кто будет на выставке?</h4>
+
+                <div class="text">Розничные продавцы, оптовики, владельцы магазинов, СМИ, известные блогеры, 
+                    производители снаряжения и представители органов власти.</div>
+
+                <h4 class="bold">Для получения билета специалиста, необходимо пройти регистрацию</h4>
+
+                <div class="text">
+                    <p><strong>Свою принадлежность к отрасли необходимо ПОДТВЕРДИТЬ ДОКУМЕНТАЛЬНО</strong>, загрузив фото или скан подтверждающего документа после регистрации</p>
+
+                    <div class="flex">
+                        <a href="javascript:void(0)" class="btn">Зарегистрироваться</a>
+                        <img src="img/company/vol.png" alt="">
+                        <span>Спонсор регистрации <br>
+                            специалистов </span>
+                    </div>
+
+                    <p>48 выставка Охота и рыболовство пройдет на ВДНХ в павильоне № 57. 
+                        Павильон находится <strong>правее знаменитого павильона «Космос», 
+                            на площади Промышленности</strong>.</p>
+                        
+                    <p>Чтобы пройти <strong> от главного входа ВДНХ</strong> до павильона 57, нужно идти всё время прямо 
+                    <strong>по любой из основных аллей Выставки</strong>, или по указателям «Политехнический музей».</p>
+
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.634321%2C55.829665&mode=routes&rtext=55.834031%2C37.626717~55.826398%2C37.637875&rtt=pd&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D1327391626&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQl7Fd8SD" width="100%" height="730" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+                    <p>Вход на территорию ВДНХ бесплатный.  <br>
+                        Проезд автотранспорта на территорию ВДНХ платный. <br>
+                        Стоимость проезда и адреса парковок <a href="javascript:void(0)">на сайте ВДНХ</a></p>
+                </div>
+            </div>
+
+            <h2>Спонсоры и партнеры</h2>
+
+            <div class="sponsors">
+                <a href="javascript:void(0)"><img src="img/company/akubens.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/company/aiq.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/company/gamo.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/company/happy.png" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/company/eva.png" alt=""></a>
+            </div>
+            <div class="sponsors__padding right">
+                <a href="javascript:void(0)" class="btn">Все участники</a>
+            </div>
+
+            <div class="content__social green">
+                <p><span>Присоединяйтесь</span> к нам в  социальных сетях, <br>
+                    чтобы быть в курсе самых свежих новостей <br>
+                    по итересующим вас темам.</p>
+
+                <div class="social">
+                    <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-vk"></use></svg></a>
+                    <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-inst"></use></svg></a>
+                    <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-fb"></use></svg></a>
+                    <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-youtube"></use></svg></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <div class="sidebar__spec">
+                <span>Спецпредложения <br>
+                    от участников <br>
+                    выставки</span>
+            </div>
+
+            <a href="javascript:void(0)" class="sidebar__product">
+                <div class="sidebar__photo" style="background-image: url('img/product/p1.jpg');"></div>
+                <div class="sidebar__name">Катушка Daiwa Ninja 2000A</div>
+                <div class="sidebar__flex">
+                    <div>
+                        <span class="sidebar__text">Розничная цена</span>
+                        <span class="sidebar__price">3 170 р</span>
+                    </div>
+                    <div>
+                        <span class="sidebar__text">Цена на выставке</span>
+                        <span class="sidebar__price">2 500 р</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="sidebar__product">
+                <div class="sidebar__photo" style="background-image: url('img/product/p2.jpg');"></div>
+                <div class="sidebar__name">Нож ИП Семин Сибиряк
+                    дамасская сталь складной</div>
+                <div class="sidebar__flex">
+                    <div>
+                        <span class="sidebar__text">Розничная цена</span>
+                        <span class="sidebar__price">3 170 р</span>
+                    </div>
+                    <div>
+                        <span class="sidebar__text">Цена на выставке</span>
+                        <span class="sidebar__price">2 500 р</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="sidebar__product">
+                <div class="sidebar__photo" style="background-image: url('img/product/p1.jpg');"></div>
+                <div class="sidebar__name">Катушка Daiwa Ninja 2000A</div>
+                <div class="sidebar__flex">
+                    <div>
+                        <span class="sidebar__text">Розничная цена</span>
+                        <span class="sidebar__price">3 170 р</span>
+                    </div>
+                    <div>
+                        <span class="sidebar__text">Цена на выставке</span>
+                        <span class="sidebar__price">2 500 р</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="sidebar__product">
+                <div class="sidebar__photo" style="background-image: url('img/product/p2.jpg');"></div>
+                <div class="sidebar__name">Нож ИП Семин Сибиряк
+                    дамасская сталь складной</div>
+                <div class="sidebar__flex">
+                    <div>
+                        <span class="sidebar__text">Розничная цена</span>
+                        <span class="sidebar__price">3 170 р</span>
+                    </div>
+                    <div>
+                        <span class="sidebar__text">Цена на выставке</span>
+                        <span class="sidebar__price">2 500 р</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="javascript:void(0)" class="sidebar__product">
+                <div class="sidebar__photo" style="background-image: url('img/product/p2.jpg');"></div>
+                <div class="sidebar__name">Нож ИП Семин Сибиряк
+                    дамасская сталь складной</div>
+                <div class="sidebar__flex">
+                    <div>
+                        <span class="sidebar__text">Розничная цена</span>
+                        <span class="sidebar__price">3 170 р</span>
+                    </div>
+                    <div>
+                        <span class="sidebar__text">Цена на выставке</span>
+                        <span class="sidebar__price">2 500 р</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- END CONTENT  -->
+<footer class="footer">
+    <div class="container">
+        <nav class="footer__menu">
+            <a href="javascript:void(0)">О выставке</a>
+            <a href="javascript:void(0)">Участники</a>
+            <a href="javascript:void(0)">Акции и новинки</a>
+            <a href="javascript:void(0)">Контакты</a>
+        </nav>
+        <a href="javascript:void(0)" class="btn btn-outline">Участникам</a>
+        <div class="social">
+            <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-vk"></use></svg></a>
+            <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-inst"></use></svg></a>
+            <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-fb"></use></svg></a>
+            <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-youtube"></use></svg></a>
+        </div>
+        <div class="footer__markets">
+            <a href="javascript:void(0)"><img src="img/appstore.svg" alt=""></a>
+            <a href="javascript:void(0)"><img src="img/google.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="container footer__copyright">© 2020 Expodesign</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/libs/jquery.mask.min.js"></script>
+<script src="js/libs/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
