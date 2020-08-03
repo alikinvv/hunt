@@ -232,6 +232,57 @@ a {
 		padding: 5px 0;
 	}
 
+	&-main {
+		.hedaer__date {
+			display: none !important;
+		}
+
+		.mobile,
+		.header__buy .btn .mobile {
+			display: none !important;
+		}
+	}
+
+	&.sticky {
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		left: 0;
+		transform: translateY(-100%);
+
+		&.nav-up {
+			transform: translateY(0);
+			transition: $trans;
+		}
+	}
+
+	&__wrap {
+		@include r(767) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__buy .mobile {
+		@include r(767) {
+			display: inline;
+		}
+	}
+
+	&__date {
+		@include r(767) {
+			display: block;
+		}
+
+		display: none;
+		font-family: $din;
+		font-weight: 500;
+		color: #445C5C;
+		padding-left: 37px;
+		font-size: 23px;
+	}
+
 	&__logo {
 		@include r(767) {
 			position: relative;
@@ -477,7 +528,7 @@ a {
 
 			text-transform: uppercase;
 			text-decoration: none;
-			font-size: 28px;
+			font-size: 27px;
 			margin: 0 17px;
 			transition: $trans;
 			color: inherit;
@@ -732,15 +783,15 @@ a {
 	}
 
 	&__logos {
-		@include r(1023) {
-			display: none;
-		}
-
 		display: flex;
 		align-items: center;
 		margin-top: 27px;
 
 		img {
+			@include r(1023) {
+				max-height: 40px;
+			}
+
 			margin: 0 14px;
 			pointer-events: none;
 			user-select: none
@@ -748,10 +799,6 @@ a {
 	}
 
 	&__btn {
-		@include r(1023) {
-			display: none;
-		}
-
 		margin-top: 34px;
 		padding: 4px 53px;
 	}

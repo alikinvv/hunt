@@ -72,3 +72,33 @@ $('body').on('click', '.tabs a', (e) => {
     $('.tab').removeClass('active');
     $(`.tab[data-tab="${$(e.currentTarget).attr('data-tab')}"]`).addClass('active');
 });
+
+let lastScrollTop = 0,
+header = document.querySelector('header');
+
+if (header !== null && $(window).width() <= 767 ){
+    window.onscroll = function() {stickFunc()};
+}
+
+let sticky = 0;
+
+function stickFunc() {
+    sticky = $('.header').outerHeight();
+
+    if (window.pageYOffset >= sticky) {
+        header.classList.add('sticky');
+        $('body').css('padding-top', sticky);
+    }
+
+    let st = $(this).scrollTop();
+
+    if (st > lastScrollTop && window.pageYOffset > sticky){
+        header.classList.add('nav-down')
+        header.classList.remove('nav-up');
+    } else {
+        header.classList.add('nav-up')
+        header.classList.remove('nav-down');
+    }
+
+    lastScrollTop = st;
+}

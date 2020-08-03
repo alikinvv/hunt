@@ -1,5 +1,40 @@
-//= template/header.html
-<!-- START CONTENT  -->
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+</head>
+<body>
+
+<header class="header header-main">
+    <div class="container">
+        <a href="/" class="header__logo">
+            <img src="img/logo.svg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="btn header__buy"><span class="mobile">Купить</span> билет</a>
+        <div class="header__links">
+            <div class="social">
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-vk"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-inst"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-fb"></use></svg></a>
+                <a href="javascript:void(0)"><svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-youtube"></use></svg></a>
+            </div>
+            <div class="header__lang">
+                <a href="javascript:void(0)" class="active">RU</a>/<a href="javascript:void(0)">EN</a>
+            </div>
+        </div>
+    </div>
+</header>
 
 <section class="menu menu-main">
     <div class="container">
@@ -35,48 +70,6 @@
             </div>
 
             <a href="javascript:void(0)" class="main__btn btn">Участнику</a>
-
-            <div class="icons">
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-fish"></use></svg>
-                    </div>
-                    <span>рыбалка</span>
-                </div>
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-bow"></use></svg>
-                    </div>
-                    <span>охота</span>
-                </div>
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-radio"></use></svg>
-                    </div>
-                    <span>устройства <br>
-                        слежения, оптика</span>
-                </div>
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-bike"></use></svg>
-                    </div>
-                    <span>Транспорт</span>
-                </div>
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-tent"></use></svg>
-                    </div>
-                    <span>активный <br>
-                        туризм</span>
-                </div>
-                <div class="icons__item">
-                    <div class="icons__img">
-                        <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-ship"></use></svg>
-                    </div>
-                    <span>водный <br>
-                        транспорт</span>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -194,7 +187,7 @@
                 <a href="javascript:void(0)"><img src="img/company/eva.png" alt=""></a>
             </div>
             <div class="right">
-                <a href="javascript:void(0)" class="btn">Все участники</a>
+                <a href="javascript:void(0)" class="btn btn-green">Все участники</a>
             </div>
 
             <div class="banner">
