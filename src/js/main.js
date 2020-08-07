@@ -1,6 +1,6 @@
 let updateTicketPosition = () => {
     if ($(window).width() >= 1580) {
-        $('.ticket').css('left', $('.header .container').offset().left + $('.header .container').outerWidth() - $('.ticket').outerWidth());
+        $('.ticket').css('right', 'initial').css('left', $('.header .container').offset().left + $('.header .container').outerWidth() - $('.ticket').outerWidth());
     } else if ($(window).width() < 1580) {
         $('.ticket').css('right', 20).css('left', 'initial');
     }

@@ -2066,7 +2066,7 @@ a {
 }
 
 .footer {
-	@include r(1023) {
+	@include r(1279) {
 		padding-top: 23px;
 		padding-bottom: 23px;
 	}
@@ -2080,7 +2080,7 @@ a {
 	}
 
 	.container {
-		@include r(1023) {
+		@include r(1279) {
 			flex-direction: column;
 		}
 
@@ -2090,7 +2090,7 @@ a {
 	}
 
 	&__menu {
-		@include r(1023) {
+		@include r(1279) {
 			margin-bottom: 25px;
 		}
 
@@ -2108,7 +2108,7 @@ a {
 				font-size: 16px;
 			}
 
-			@include r(1023) {
+			@include r(1279) {
 				font-size: 18px;
 			}
 
@@ -2128,7 +2128,7 @@ a {
 	}
 
 	.social {
-		@include r(1023) {
+		@include r(1279) {
 			margin-bottom: 25px;
 		}
 
@@ -2137,7 +2137,7 @@ a {
 				margin: 0 5px;
 			}
 
-			@include r(1023) {
+			@include r(1279) {
 				margin: 0 10px;
 			}
 
@@ -2172,6 +2172,11 @@ a {
 		}
 
 		@include r(1279) {
+			margin-bottom: 25px;
+			margin-left: 0;
+		}
+
+		@include r(1023) {
 			display: none !important;
 		}
 
